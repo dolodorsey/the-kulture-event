@@ -31,7 +31,7 @@ export default function Page() {
         <div><span style={{fontFamily:"'Bebas Neue',sans-serif",fontSize:'clamp(18px,2vw,24px)',letterSpacing:'.12em',color:C.light}}>THE KULTURE</span><br/><span style={{fontFamily:"'DM Mono',monospace",fontSize:9,letterSpacing:'.3em',color:C.accent}}>Streetwear Market · ATL</span></div>
         <div className="nl" style={{display:'flex',gap:'clamp(16px,2vw,32px)',alignItems:'center'}}>
           {['Vendors','Experience'].map(l=><a key={l} href={`#${l.toLowerCase()}`} style={{fontFamily:"'DM Mono',monospace",fontSize:9,letterSpacing:'.2em',textTransform:'uppercase',color:'rgba(240,235,224,.4)',textDecoration:'none'}}>{l}</a>)}
-          <a href="#tickets" className="bp" style={{padding:'10px 24px',fontSize:9}}>Tickets</a>
+          <a href="#tickets" className="bp" style={{padding:'10px 24px',fontSize:9}}>TICKETS →</a>
         </div>
       </nav>
 
@@ -45,7 +45,7 @@ export default function Page() {
           <p style={{fontFamily:"'DM Mono',monospace",fontSize:10,letterSpacing:'.4em',textTransform:'uppercase',color:'rgba(200,205,214,.4)',marginTop:16}}>Atlanta · Curated Streetwear · Culture Experience</p>
         </div>
         <div className="hc" style={{position:'relative',zIndex:2,display:'flex',gap:16,marginTop:40,flexWrap:'wrap',justifyContent:'center'}}>
-          <a href="#tickets" className="bp">Get Tickets</a><a href="#vendors" className="bo">Become a Vendor</a>
+          <a href="#tickets" className="bp">TICKETS →</a><a href="#vendors" className="bo">Become a Vendor</a>
         </div>
       </section>
 
@@ -101,7 +101,7 @@ export default function Page() {
         <div className="r" style={{maxWidth:720,margin:'0 auto',textAlign:'center',position:'relative',zIndex:1}}>
           <h2 style={{fontFamily:"'Bebas Neue',sans-serif",fontSize:'clamp(40px,7vw,100px)',lineHeight:.9,color:C.light,marginBottom:24}}>GET IN<br/><span style={{color:C.accent}}>THE ROOM</span></h2>
           <p style={{fontSize:15,lineHeight:1.8,color:'rgba(240,235,224,.45)',maxWidth:440,margin:'0 auto 44px'}}>General admission. Full access. Capacity capped.</p>
-          <a href="https://huglife.vercel.app/#tickets" target="_blank" rel="noopener noreferrer" className="bp" style={{padding:'20px 64px',fontSize:11}}>Buy Tickets →</a>
+          <a href="https://www.eventbrite.com/e/the-kulture-streetwear-market-tickets-1985661193081" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" className="bp" style={{padding:'20px 64px',fontSize:11}}>TICKETS →</a>
         </div>
       </section>
 
