@@ -10,7 +10,7 @@ export default function Page() {
   }, []);
   const C = { bg: '#0a0908', light: '#F0EBE0', accent: '#8B3A1A', metal: '#C8CDD6' };
   return (
-    <div style={{background:C.bg,color:C.light,fontFamily:"'DM Sans',sans-serif"}}>
+    <div style={{background:C.bg,color:C.light,fontFamily:"'DM Sans',sans-serif",overflowX:'hidden'}}>
       <style dangerouslySetInnerHTML={{__html:`
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
         *{margin:0;padding:0;box-sizing:border-box}
@@ -74,7 +74,7 @@ export default function Page() {
         <div className="sbg" style={{backgroundImage:'url(/logo.png)',backgroundPosition:'10% center',backgroundSize:'30%',opacity:.035,filter:'brightness(.25)'}}/>
         <div style={{maxWidth:1400,margin:'0 auto',position:'relative',zIndex:1}}>
           <div className="r"><h2 style={{fontFamily:"'Bebas Neue',sans-serif",fontSize:'clamp(36px,6vw,80px)',lineHeight:.9,color:C.light,marginBottom:64}}>THE <span style={{color:C.accent}}>DROP LIST</span></h2></div>
-          <div className="eg" style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:1,background:'rgba(255,255,255,.07)'}}>
+          <div className="dg eg" style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:1,background:'rgba(255,255,255,.07)'}}>
             {[['STREETWEAR BRANDS','Independent labels, local drops, exclusive collabs'],['VINTAGE FASHION','Curated deadstock, archive pieces, rare finds'],['SNEAKERS','Collectors, heat, DS and VNDS'],['JEWELRY','Custom chains, grillz, statement pieces'],['ACCESSORIES','Bags, hats, sunglasses, belts'],['ART & COLLECTIBLES','Prints, sculptures, limited editions'],['CUSTOM PIECES','On-site customization and hand-finished work'],['LIMITED DROPS','Exclusive launches at the event only']].map(([t,d],i)=>
               <div key={i} className={`r d${i%3+1}`} style={{background:C.bg,padding:'32px 36px',borderLeft:'2px solid transparent',transition:'all .3s'}} onMouseEnter={e=>{e.currentTarget.style.borderLeftColor=C.accent}} onMouseLeave={e=>{e.currentTarget.style.borderLeftColor='transparent'}}>
                 <div style={{fontFamily:"'Bebas Neue',sans-serif",fontSize:'clamp(18px,2vw,26px)',color:'rgba(240,235,224,.5)',marginBottom:6}}>{t}</div>
@@ -106,7 +106,7 @@ export default function Page() {
       </section>
 
       <footer style={{background:'#060504',borderTop:'1px solid rgba(255,255,255,.07)',padding:'56px clamp(24px,5vw,80px) 36px'}}>
-        <div className="fg" style={{maxWidth:1400,margin:'0 auto',display:'grid',gridTemplateColumns:'2fr 1fr 1fr',gap:40}}>
+        <div className="dg fg" style={{maxWidth:1400,margin:'0 auto',display:'grid',gridTemplateColumns:'2fr 1fr 1fr',gap:40}}>
           <div><div style={{fontFamily:"'Bebas Neue',sans-serif",fontSize:28,letterSpacing:'.1em',color:C.light}}>THE KULTURE</div><div style={{fontFamily:"'DM Mono',monospace",fontSize:9,letterSpacing:'.3em',color:C.accent}}>STREETWEAR MARKET · ATLANTA</div><p style={{fontSize:12,color:'rgba(240,235,224,.35)',marginTop:12,lineHeight:1.7}}>A KHG HugLife Event.</p></div>
           <div><div style={{fontFamily:"'DM Mono',monospace",fontSize:8,letterSpacing:'.4em',color:C.accent,marginBottom:16}}>EVENT</div>{['Experience','Vendors','FAQ'].map(l=><div key={l} style={{fontSize:12,color:'rgba(240,235,224,.35)',marginBottom:8}}>{l}</div>)}</div>
           <div><div style={{fontFamily:"'DM Mono',monospace",fontSize:8,letterSpacing:'.4em',color:C.accent,marginBottom:16}}>CONNECT</div>{['Get Tickets','@thekollectiveworldwide'].map(l=><div key={l} style={{fontSize:12,color:'rgba(240,235,224,.35)',marginBottom:8}}>{l}</div>)}</div>
