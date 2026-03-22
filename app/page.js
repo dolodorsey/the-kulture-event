@@ -101,7 +101,7 @@ export default function Page() {
         <div className="r" style={{maxWidth:720,margin:'0 auto',textAlign:'center',position:'relative',zIndex:1}}>
           <h2 style={{fontFamily:"'Bebas Neue',sans-serif",fontSize:'clamp(40px,7vw,100px)',lineHeight:.9,color:C.light,marginBottom:24}}>GET IN<br/><span style={{color:C.accent}}>THE ROOM</span></h2>
           <p style={{fontSize:15,lineHeight:1.8,color:'rgba(240,235,224,.45)',maxWidth:440,margin:'0 auto 44px'}}>General admission. Full access. Capacity capped.</p>
-          <a href="https://www.eventbrite.com/e/the-kulture-streetwear-market-tickets-1985661193081" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" className="bp" style={{padding:'20px 64px',fontSize:11}}>TICKETS →</a>
+          <a href="https://www.eventbrite.com/e/the-kulture-streetwear-market-tickets-1985661193081" target="_blank" rel="noopener noreferrer" className="bp" style={{padding:'20px 64px',fontSize:11}}>TICKETS →</a>
         </div>
       </section>
 
