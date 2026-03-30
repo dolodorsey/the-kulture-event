@@ -9,10 +9,27 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700;800;900&family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
-              <script
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: '{"@context": "https://schema.org", "@type": "Event", "name": "The Kulture: Streetwear Market", "description": "Atlanta's premier streetwear and culture market.", "url": "https://thekulture.com", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Atlanta, GA", "address": {"@type": "PostalAddress", "addressLocality": "Atlanta", "addressRegion": "GA"}}, "organizer": {"@type": "Organization", "name": "HugLife Events", "url": "https://huglife.com"}}'
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Event",
+              "name": "The Kulture: Streetwear Market",
+              "description": "Atlanta's premier streetwear and culture market.",
+              "url": "https://thekulture.com",
+              "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+              "location": {
+                "@type": "Place",
+                "name": "Atlanta, GA",
+                "address": { "@type": "PostalAddress", "addressLocality": "Atlanta", "addressRegion": "GA" }
+              },
+              "organizer": {
+                "@type": "Organization",
+                "name": "HugLife Events",
+                "url": "https://huglife.com"
+              }
+            })
           }}
         />
       </head>
